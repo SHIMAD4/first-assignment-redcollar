@@ -28,21 +28,24 @@ button {
 .header {
   background-color: #2E323F;
 }
-.header__list {
+.header__nav {
+  padding: 16px 26px;
+}
+.header__nav__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 26px;
 }
-.header__list__item {
+.header__nav__list-item {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   margin-right: 32px;
+  cursor: pointer;
 }
-.header__list__item:last-child {
+.header__nav__list-item:last-child {
   margin-right: 0px;
 }
 
@@ -74,4 +77,5 @@ button {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  cursor: pointer;
 }
