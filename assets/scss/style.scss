@@ -2,8 +2,14 @@
 $header-bg: #2E323F; 
 $hero-bg: #3B4050;
 $accent-clr: #A59678;
+
 $main-text-clr: #F1F1F1;
+$heading-font-size: 32px;
+$subheading-font-size: 24px;
+$main-font-size: 16px;
 $alt-text-clr: #2E323F;
+
+$wrapper-width-mobile: 312px;
 
 
 // Main styles
@@ -15,4 +21,74 @@ $alt-text-clr: #2E323F;
 
 body {
     font-family: 'Inter', sans-serif;
+    color: $main-text-clr;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: $main-text-clr;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: $wrapper-width-mobile;
+    margin: 0 auto;
+}
+
+// Header
+.header {
+    background-color: $header-bg;
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 26px;
+        &__item {
+            font-weight: 600;
+            font-size: $main-font-size;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin-right: 32px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// Hero section
+.hero {
+    background-color: $hero-bg;
+    &__heading {
+        margin: 0;
+        padding-top: 48px;
+        margin-bottom: 32px;
+        font-size: $heading-font-size;
+        font-weight: 600;
+        line-height: 48px;
+    }
+    &__description {
+        padding-bottom: 48px;
+        &__text{
+            font-size: $main-font-size;
+            line-height: 24px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+        &__button {
+            text-transform: uppercase;
+            background-color: $accent-clr;
+            padding: 8px 24px;
+            border-radius: 16px;
+            font-size: $main-font-size;
+            font-weight: 700;
+            line-height: 24px;
+        }
+    }
 }

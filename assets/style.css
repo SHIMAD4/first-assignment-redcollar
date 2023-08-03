@@ -6,4 +6,72 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: #F1F1F1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: #F1F1F1;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 312px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #2E323F;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 26px;
+}
+.header__list__item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-right: 32px;
+}
+.header__list__item:last-child {
+  margin-right: 0px;
+}
+
+.hero {
+  background-color: #3B4050;
+}
+.hero__heading {
+  margin: 0;
+  padding-top: 48px;
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.hero__description {
+  padding-bottom: 48px;
+}
+.hero__description__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.hero__description__button {
+  text-transform: uppercase;
+  background-color: #A59678;
+  padding: 8px 24px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
 }
