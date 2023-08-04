@@ -155,3 +155,51 @@ button {
 .article__steps__list-item:last-child {
   margin-bottom: 0px;
 }
+
+.footer {
+  background-color: #3B4050;
+  padding: 72px 0px;
+}
+.footer__heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.footer__description {
+  margin-bottom: 32px;
+}
+.footer__description__heading {
+  color: #A59678;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.footer__description__subheading {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.footer__nav__list {
+  margin-bottom: 32px;
+}
+.footer__nav__list-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.footer__nav__list-item:last-child {
+  margin-bottom: 0px;
+}
+.footer__nav__list-item--heading {
+  color: #A59678;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.footer__nav__list:last-child {
+  margin-bottom: 0px;
+}
