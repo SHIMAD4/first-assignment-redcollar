@@ -79,3 +79,27 @@ button {
   line-height: 24px;
   cursor: pointer;
 }
+
+.features__list {
+  padding: 48px 0px;
+}
+.features__list-item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.features__list-item__heading {
+  color: #A59678;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.features__list-item__subheading {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #2E323F;
+}
+.features__list-item:last-child {
+  margin-bottom: 0px;
+}

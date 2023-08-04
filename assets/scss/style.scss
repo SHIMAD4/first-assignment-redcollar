@@ -4,8 +4,8 @@ $hero-bg: #3B4050;
 $accent-clr: #A59678;
 
 $main-text-clr: #F1F1F1;
-$heading-font-size: 32px;
-$subheading-font-size: 24px;
+$h1-font-size: 32px;
+$h2-font-size: 24px;
 $main-font-size: 16px;
 $alt-text-clr: #2E323F;
 
@@ -72,7 +72,7 @@ button {
         margin: 0;
         padding-top: 48px;
         margin-bottom: 32px;
-        font-size: $heading-font-size;
+        font-size: $h1-font-size;
         font-weight: 600;
         line-height: 48px;
     }
@@ -93,6 +93,33 @@ button {
             font-weight: 700;
             line-height: 24px;
             cursor: pointer;
+        }
+    }
+}
+
+// Features section
+.features {
+    &__list {
+        padding: 48px 0px;
+        &-item {
+            text-align: center;
+            margin-bottom: 40px;
+            &__heading {
+                color: $accent-clr;
+                font-size: $h2-font-size;
+                font-weight: 700;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+            &__subheading {
+                font-size: $main-font-size;
+                font-weight: 500;
+                line-height: 24px;
+                color: $alt-text-clr;
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
         }
     }
 }
