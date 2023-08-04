@@ -1,6 +1,7 @@
 // Variables
 $header-bg: #2E323F; 
 $hero-bg: #3B4050;
+$alt-bg-clr: #F1F1F1;
 $accent-clr: #A59678;
 
 $main-text-clr: #F1F1F1;
@@ -26,6 +27,11 @@ body {
 
 ul {
     list-style-type: none;
+}
+
+a {
+    color: $main-text-clr;
+    text-decoration: none;
 }
 
 button {
@@ -56,7 +62,6 @@ button {
                 line-height: 24px;
                 text-transform: uppercase;
                 margin-right: 32px;
-                cursor: pointer;
                 &:last-child {
                     margin-right: 0px;
                 }
@@ -99,6 +104,7 @@ button {
 
 // Features section
 .features {
+    background-color: $alt-bg-clr;
     &__list {
         padding: 48px 0px;
         &-item {
@@ -119,6 +125,54 @@ button {
             }
             &:last-child {
                 margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+// Article section
+.article {
+    padding: 48px 0px;
+    &__heading {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        line-height: 32px;
+        color: $accent-clr;
+        margin-bottom: 24px;
+    }
+    &__subheading {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: $alt-text-clr;
+    }
+    &__image {
+        margin: 40px 0px;
+    }
+    &__steps {
+        margin-top: 65px;
+        &__list {
+            &-item {
+                background-color: $hero-bg;
+                text-align: center;
+                padding: 32px;
+                margin-bottom: 24px;
+                &__heading {
+                    font-size: $h2-font-size;
+                    font-weight: 700;
+                    line-height: 32px;
+                    margin-bottom: 24px;
+                    color: $main-text-clr;
+                }
+                &__subheading {
+                    font-size: $main-font-size;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: $main-text-clr;
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
             }
         }
     }
