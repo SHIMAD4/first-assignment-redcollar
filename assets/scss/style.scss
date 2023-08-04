@@ -7,10 +7,11 @@ $accent-clr: #A59678;
 $main-text-clr: #F1F1F1;
 $h1-font-size: 32px;
 $h2-font-size: 24px;
+$h1-font-size-desktop: 64px;
 $main-font-size: 16px;
 $alt-text-clr: #2E323F;
 
-$wrapper-width-mobile: 312px;
+$wrapper-width: 90%;
 
 
 // Main styles
@@ -42,7 +43,7 @@ button {
 
 .wrapper {
     width: 100%;
-    max-width: $wrapper-width-mobile;
+    max-width: $wrapper-width;
     margin: 0 auto;
 }
 
@@ -147,6 +148,7 @@ button {
         color: $alt-text-clr;
     }
     &__image {
+        width: 100%;
         margin: 40px 0px;
     }
     &__steps {
@@ -226,5 +228,107 @@ button {
                 margin-bottom: 0px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        max-width: $wrapper-width;
+    }
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        &__nav__list {
+            justify-content: flex-end;
+        }
+    }
+    .hero {
+        .hero__wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 128px 0px;
+        }
+        &__heading {
+            display: block;
+            max-width: 514px;
+            font-size: $h1-font-size-desktop;
+            line-height: 72px;
+        }
+        &__description {
+            padding: 40px 0px;
+            max-width: 334px;
+        }
+    }
+    .features {
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 64px 0px;
+            &-item {
+                margin-bottom: 0px;
+                padding: 0px 20px;
+                &__heading {
+                    margin-bottom: 32px;
+                }
+                &__subheading {
+                    max-width: 355px;
+                }
+            }
+        }
+    }
+    .article {
+        padding: 48px 0px;
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+        &__body {
+            margin-right: 64px;
+        }
+        &__steps {
+            max-width: 312px;
+            margin-top: 0px;
+        }
+    }
+    .footer {
+        padding: 96px 0px;
+        &__body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__heading {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+        &__description {
+            max-width: 373px;
+            margin-bottom: 0px;  
+        }
+        &__nav {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            &__list {
+                margin-bottom: 0px;
+                &-item {
+                    margin-bottom: 12px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1600px) {
+    .wrapper {
+        max-width: 1440px;
     }
 }
