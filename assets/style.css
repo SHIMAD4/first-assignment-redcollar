@@ -273,6 +273,8 @@ button {
     align-items: center;
   }
   .footer__heading {
+    font-size: 48px;
+    line-height: 64px;
     text-align: center;
     margin-bottom: 64px;
   }
